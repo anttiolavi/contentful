@@ -1,0 +1,39 @@
+.article-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 (-1 * $margin);
+
+    &__item {
+        flex: 0 1 20rem;
+    }
+}
+
+.article-card {
+    display: flex;
+    flex-direction: column;
+
+    padding: $margin;
+
+    text-decoration: none;
+    color: $color-secondary;
+
+    padding-top: 11rem;
+    overflow: hidden;
+    & img {
+        position:absolute;
+        top: 0;
+        height: 10rem;        
+    }
+
+    transition: transform 0.2s cubic-bezier(0.47, 0, 0.745, 0.715);
+    transform: scale(1);
+    &:hover {
+        transform: scale(1.1);
+    }
+
+    &__info {
+        color: $color-disabled;
+        font-size: 0.8em;
+        margin-top: -0.8rem;
+    }
+}

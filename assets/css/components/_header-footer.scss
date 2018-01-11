@@ -1,0 +1,28 @@
+.footer,
+.header {
+    display: flex;
+    align-items: center;
+
+    @include contentArea();
+
+    height: 6rem;
+}
+
+.header {
+    color: $color-white; 
+    background: $color-primary;
+    font-size: $font-size-h4;
+    justify-content: space-between;
+
+    &__logo {
+        height: 3rem;
+    }
+}
+
+.footer {
+    color: $color-white; 
+    background: $color-secondary;
+    font-size: $font-size-h4;
+    font-family: $font-family-header;
+    text-transform: uppercase;
+}

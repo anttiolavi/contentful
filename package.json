@@ -1,0 +1,25 @@
+{
+  "name": "contentful-netlify",
+  "description": "Demo of using Contentful with Netlify",
+  "scripts": {
+    "build": "./node_modules/roots/bin/roots compile -e production",
+    "dev": "./node_modules/roots/bin/roots watch"
+  },
+  "private": true,
+  "dependencies": {
+    "autoprefixer": "^7.1.1",
+    "coffee-script": "1.x",
+    "css-pipeline": "0.3.x",
+    "dotenv": "^4.0.0",
+    "jade": "1.x",
+    "js-pipeline": "0.2.x",
+    "jstransformer-marked": "1.x",
+    "marked": "^0.3.6",
+    "moment": "^2.18.1",
+    "node-sass": "^4.5.3",
+    "postcss": "^5.2.17",
+    "roots": "^5.2.0",
+    "roots-contentful": "^0.0.9",
+    "roots-records": "^0.5.1"
+  }
+}

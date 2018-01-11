@@ -1,0 +1,20 @@
+extends partials/_layout
+
+block content
+    section.margin
+    p Welcome to netlify demo site
+
+    section
+        h1 Pages
+
+        div.article-list
+            each page in contentful.pages
+                article.article-list__item
+                    a.article-card(href=page._url)
+                        img(src=asset(page.image, {h: 300}))
+                        h3= page.title
+                        .article-card__info
+                            | published
+                            | &nbsp;
+                            span= dateFromat(page.published)
+                        p= page.description

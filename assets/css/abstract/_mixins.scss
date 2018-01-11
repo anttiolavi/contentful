@@ -1,0 +1,11 @@
+
+@mixin contentArea() {
+    padding-left: $margin;
+    padding-right: $margin;
+    @media screen and (min-width: $breakpoint-mobile) {
+        $content-area-half: $content-area-size / 2;
+        padding-left: calc(50vw - #{$content-area-half});
+        padding-right: calc(50vw - #{$content-area-half});
+    }
+
+}

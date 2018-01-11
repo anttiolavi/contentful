@@ -1,0 +1,7 @@
+extends partials/_layout
+
+block content
+    .hero-image
+        img(src=asset(entry.image, {w: 1400}))
+    h1= entry.title
+    div!= markdown(entry.content)
